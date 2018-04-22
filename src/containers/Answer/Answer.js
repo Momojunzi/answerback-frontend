@@ -15,7 +15,7 @@ class Answer extends Component {
   }
 
   getAnswer = () => {
-    axios.get('https://10.11.240.129:8080/api/answer')
+    axios.get('http://localhost:8080/api/answer')
       .then(result =>{
         console.log(result);
         const answer = result.data;
