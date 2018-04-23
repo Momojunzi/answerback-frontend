@@ -16,7 +16,7 @@ class Answer extends Component {
 
   getAnswer = () => {
     const server = process.env.REACT_APP_API_URL || '';
-    axios.get('http://localhost:8080/api/answer')
+    axios.get('http://0.0.0.0:8080/api/answer')
       .then(result =>{
         console.log(result);
         const answer = result.data;
