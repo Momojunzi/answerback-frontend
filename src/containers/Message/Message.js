@@ -22,7 +22,7 @@ class Button extends Component {
     if(message.owner.length<1 || message.message.length<1){
       alert("You left something blank!")
     }else{
-      axios.post('http://35.193.224.183:8080/api/message', message)
+      axios.post('http://10.11.250.182:8080/api/message', message)
         .then(result=>{
           const owner = document.getElementById("owner");
           const message = document.getElementById("message");
