@@ -50,8 +50,12 @@ class Button extends Component {
   }
 
   render() {
+    const cardStyle = {
+      width: '80vw',
+      marginTop: '8vh'
+    }
     return (
-      <div className="card mx-auto">
+      <div className="card mx-auto" style={cardStyle}>
         <div className="card-body">
           <form className="row justify-content-center">
             <div className="form-group col-10 text-left">

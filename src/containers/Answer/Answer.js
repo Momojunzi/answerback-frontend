@@ -28,8 +28,12 @@ class Answer extends Component {
   }
 
   render() {
+    const cardStyle = {
+      width: '80vw',
+      marginTop: '8vh'
+    }
     return(
-      <div className="card mx-auto">
+      <div className="card mx-auto" style={cardStyle}>
         <div className="card-header">Get an answer from a friend!</div>
         <div className="card-body">
           <h5 className="card-title">{this.state.answer.owner} says:</h5>
